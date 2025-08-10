@@ -24,11 +24,11 @@ This library provides a set of ready-to-use Zod validation schemas and helpers f
 ## Quick Start
 
 ```bash
-npm install zod @knofte/zod-validation-library
+npm install zod @kentriboe/zod-validation-library
 ```
 
 ```typescript
-import { emailSchema, passwordSchema, usernameSchema } from "@knofte/zod-validation-library";
+import { emailSchema, passwordSchema, usernameSchema } from "@kentriboe/zod-validation-library";
 
 // Example usage:
 emailSchema.parse("user@example.com");
@@ -41,7 +41,7 @@ usernameSchema.parse("user_123");
 ### Password
 
 ```typescript
-import { passwordSchema } from "@knofte/zod-validation-library";
+import { passwordSchema } from "@kentriboe/zod-validation-library";
 
 passwordSchema.parse("Secret123!"); // ✅ Passes
 passwordSchema.parse("123");        // ❌ Throws error
@@ -50,7 +50,7 @@ passwordSchema.parse("123");        // ❌ Throws error
 ### Email
 
 ```typescript
-import { emailSchema } from "@knofte/zod-validation-library";
+import { emailSchema } from "@kentriboe/zod-validation-library";
 
 emailSchema.parse("test@example.com"); // ✅
 emailSchema.parse("invalid-email");    // ❌

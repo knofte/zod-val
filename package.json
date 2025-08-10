@@ -44,5 +44,8 @@
   "devDependencies": {
     "typescript": "^5.0.0",
     "zod": "^3.0.0"
+  },
+  "dependencies": {
+    "@kentriboe/zod-val": "file:kentriboe-zod-val-1.0.0.tgz"
   }
 }

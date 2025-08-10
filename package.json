@@ -1,0 +1,48 @@
+{
+  "name": "@kentriboe/zod-val",
+  "version": "1.0.0",
+  "description": "Reusable Zod validation schemas for common fields like email, password, and username.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "zod",
+    "validation",
+    "schema",
+    "typescript",
+    "form",
+    "react",
+    "react-native"
+  ],
+  "author": "kentriboe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knofte/zod-val.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knofte/zod-val/issues"
+  },
+  "homepage": "https://github.com/knofte/zod-val#readme",
+  "peerDependencies": {
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "zod": "^3.0.0"
+  }
+}
